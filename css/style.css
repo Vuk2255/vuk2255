@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@500&family=Teko&family=Work+Sans:wght@400;500&family=Yellowtail&display=swap');
+
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Work Sans;
+}
+.cleaner{
+	clear:both;
+}
+#head{
+	position: fixed;
+	z-index: 99;
+	width:100%;
+	background-color:rgba(15, 12, 12, 0.9);
+}
+#center{
+	margin:0px auto;
+}
+#navigation{
+	position: relative;
+	display:flex;
+	justify-content: space-around;
+}
+#logo{
+	margin-left:110px;
+}
+#navigation ul li{
+	display: inline-block;
+	padding: 15px;
+	margin-right:20px;
+}
+#navigation ul a{
+	text-decoration: none;
+	color: rgb(174, 119, 7);
+	text-transform: uppercase;
+	font-size: 23px;
+} 
+ul a li:hover{
+	color:white;
+	opacity: 1;
+}
+ul a li::before{
+	transition: 300ms;
+	height: 2px;
+	content: "";
+	position: absolute;
+	background-color: rgb(174, 119, 7);
+	width: 0%;
+	bottom: 20px;
+}
+ul a li:hover::before {
+	width: 8%;
+	cursor:not-allowed;
+  }
+.button{
+	border: none;
+	color: rgb(174, 119, 7);
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color:transparent; 
+	color: rgb(174, 119, 7); 
+	border: 2px solid rgb(174, 119, 7);
+  }
+  .button:hover {
+	background-color: rgb(174, 119, 7);
+	color: white;
+  }
+  #main{
+	width:100%;
+	height:700px;
+	background-color: grey;
+  }
+  #background{
+	background-image: url(../assets/img/background.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	height:100%;
+  }
+  #background2{
+	background-image: url(../assets/img/aboutus.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height:100%;
+  }
+  #background3{
+	background-image: url(../assets/img/author.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: rgb(38, 35, 35);
+	background-blend-mode: multiply;
+	height:100%;
+  }
+  #background4{
+	background-image: url(../assets/img/contact.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: rgb(38, 35, 35);
+	background-blend-mode: multiply;
+	height:100%;
+  }
+.title{ 
+	position: relative;
+	top:100px;
+	text-align:center;
+	color:rgb(186, 125, 4);
+	font-family: Georama;
+	font-size: 60px;
+	text-shadow: 1px 1px #000000;
+  }
+  .title2{ 
+	text-align: center;
+	color:rgb(174, 119, 7); 
+	margin-top:60px;
+	font-family: Georama;
+	font-size: 60px;
+  }
+  #products{
+	width: 100%;
+	background-color: rgb(38, 35, 35);
+	display:flex;
+	justify-content: space-around;
+  }
+.block{
+	width:380px;
+	height:400px;
+	margin:0px auto;
+	background-color:rgb(38, 35, 35);
+	margin-top:90px;
+}
+.block img{
+	width:100%;
+	height:100%;
+	transition: transform .3s;
+}
+.block img:hover{
+	box-shadow: 10px 5px 5px rgb(174, 119, 7);
+	transform: scale(1.1);
+}
+figcaption{
+	text-align: center;
+	color:rgb(174, 119, 7);
+	font-size: 25px;
+	margin-top: 20px;
+}
+#customers{
+	width:100%;
+	height:700px;
+	background-color: grey;
+  }
+  #testemonial{
+	background-image: url(../assets/img/testemonial.jpg);
+	background-position:top;
+	background-attachment:scroll;
+	height:100%;
+  }
+  #testemonial img{
+	position:relative;
+	width:300px;
+	height:200px;
+	top:30px;
+	left:600px;
+  }
+  #testemonial p{
+	width:50%;
+	margin: 0px auto;
+	text-align: center;
+	color:rgb(34, 23, 2);
+	margin-top: 50px;
+	text-shadow: 2px 2px rgb(174, 119, 7);
+	font-size: 26px;
+  }
+  #icon{
+	margin: 0px auto;
+	margin-top:40px;
+	border-color:rgb(34, 23, 2);
+	border-radius: 50%;
+	height:100px;
+	width:100px;
+	background-image: url(../assets/img/jokic.png);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-color: rgb(174, 119, 7);
+  }
+#why{
+	margin:0px auto;
+	background-color: rgb(123, 100, 46);
+	width:100%;
+	height:550px;
+}
+#why h1{
+	position: relative;
+	top:10px;
+	text-align:center;
+	color:rgb(13, 13, 13);
+	font-family: Georama;
+	font-size: 40px;
+  }
+  #why p{
+	margin-top: 25px;
+	text-align: center;
+	font-size: 20px;
+	color:black;
+  }
+#zlatar{
+	width:100%;
+	height:400px;
+}
+#partners{
+	position: relative;
+	background-color: rgb(38, 35, 35);
+	top:50px;
+	width:100%;
+	height:200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.brand{
+	width:100%;
+}
+.brand img{
+	width:50%;
+	height:50%;
+	margin-left: 150px;
+}
+.visit{
+	text-align:center;
+	color:rgb(174, 119, 7);
+	font-family: Georama;
+	font-size: 30px;
+}
+.visit h2{
+	font-family:Yellowtail ;
+	font-size: 40px;
+}
+.visit h1{
+	text-transform: uppercase;
+}
+#visited{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+}
+#visited img{
+	width:100%;
+	height:100%;
+}
+#visited p{
+	margin-bottom: 20px;
+	margin-left:100px;
+	width:80%;
+	height:250px;
+}
+.button2{
+	border: none;
+	color: rgb(174, 119, 7);
+	padding: 16px 35px;
+	width:210px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color:transparent; 
+	color: rgb(174, 119, 7); 
+	border: 2px solid rgb(174, 119, 7);
+	position: relative;
+	top:80px;
+	right:445px;
+  }
+  .button2:hover {
+	background-color: rgb(174, 119, 7);
+	color: white;
+  }
+#rakija{
+	position: absolute;
+	left:1200px;
+	bottom:-85px;
+	width: 300px;
+	height: 600px;
+	transition: transform .2s;
+}
+#rakija:hover{
+	transform: scale(1.1);
+}
+footer{
+	width:100%;
+	height:170px;
+	background-color:rgb(38, 35, 35);
+	display: flex;
+	justify-content:space-around;
+}
+#phone{
+	color:rgb(174, 119, 7);
+	padding: 15px;
+	margin: 10px;
+	margin-right:60px;
+}
+#phone ul{
+	list-style-type: none;
+}
+#phone ul a{
+	text-decoration: none;
+	color:rgb(174, 119, 7);
+}
+#phone ul li{
+	margin-top:8px;
+	font-size: 18px;
+}
+#top a img{
+	position: relative;
+	top:15px;
+	right:25px;
+}
+#navi{
+	padding: 15px;
+	margin: 10px;
+}
+#navi ul{
+	list-style-type: none;
+}
+#navi h4{
+	color:rgb(174, 119, 7);
+}
+#navi ul a li{
+	font-size: 18px;
+}
+#navi ul a{
+	text-decoration: none;
+	color:rgb(174, 119, 7);
+}
+#links a{
+	color:rgb(174, 119, 7);
+	position: relative;
+	font-size: 30px;
+	padding: 10px;
+	top:30px;
+	right:95px;
+}
+#links a:hover{
+	color: white;
+}
+#copy p{
+	color:rgb(174, 119, 7);
+	position: relative;
+	top:40px;
+	right:120px;
+}
+#aboutus{
+	width:100%;
+	height:500px;
+	background-color: rgb(152, 123, 44);
+	display: flex;
+	justify-content: space-around;
+}
+#plum{
+	background-image: url(../assets/img/plums.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 490px;
+	height: 490px;
+	border-radius: 50%;
+	transition: transform .2s;
+}
+#plum img{
+	height:560px;
+	right:30px;
+	bottom:40px;
+	position: relative;
+}
+#plum:hover{
+	transform: scale(1.1);
+}
+#parag{
+	width:40%;
+	height:60%;
+}
+#parag p{
+	width:100%;
+	height:100%;
+	margin-top: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+#parag h1{
+	width:100%;
+	text-align: center;
+	position: relative;
+	top:30px;
+	color:rgb(13, 13, 13);
+	font-family: Georama;
+	font-size: 40px;
+}
+.button3{
+	border: none;
+	color: rgb(174, 119, 7);
+	padding: 16px 35px;
+	width:210px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color:transparent; 
+	color: rgb(13, 13, 13);
+	border: 2px solid rgb(13, 13, 13);
+	position: relative;
+	bottom:120px;
+	left:80px;
+  }
+  .button3:hover {
+	background-color: rgb(174, 119, 7);
+	color: white;
+  }
+.home{
+	font-weight: bold;
+}
+#aboutus2{
+	width:100%;
+	height:500px;
+	background-color: rgb(38, 35, 35);
+	display: flex;
+	justify-content: space-around;
+}
+#parag2{
+	width:40%;
+	height:60%;
+}
+#parag2 p{
+	width:100%;
+	height:100%;
+	margin-top: 50px;
+	font-size: 17px;
+	text-align: justify;
+	color: rgb(174, 119, 7);
+}
+#parag2 h1{
+	width:100%;
+	text-align: center;
+	position: relative;
+	top:30px;
+	color:rgb(174, 119, 7);
+	font-family: Georama;
+	font-size: 40px;
+}
+.button4{
+	border: none;
+	color: rgb(174, 119, 7);
+	padding: 16px 35px;
+	width:210px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color:transparent; 
+	color: rgb(174, 119, 7);
+	border: 2px solid rgb(174, 119, 7);
+	position: relative;
+	bottom:30px;
+	left:200px;
+  }
+  .button4:hover {
+	background-color: rgb(174, 119, 7);
+	color: white;
+  }
+  #plum2{
+	width: 650px;
+	height: 500px;
+	border-radius: 10%;
+}
+#plum2 img{
+	height:100%;
+	width:100%;
+	right:28px;
+	position: relative;
+}
+#ponuda{
+	width:100%;
+	height:500px;
+	background-color: white;
+}
+#naslovi hgroup h3{
+	width:100%;
+	text-align: center;
+	position: relative;
+	color:rgb(13, 13, 13);
+	font-family: Yellowtail;
+	font-size: 40px;
+}
+#naslovi hgroup h1{
+	width:100%;
+	text-align: center;
+	position: relative;
+	color:rgb(13, 13, 13);
+	font-family: Georama;
+	font-size: 50px;
+}
+#kazan{
+	width:100%;
+	height:70%;
+	display: flex;
+	justify-content:space-evenly;
+}
+.bure{
+	position: relative;
+	top:20px;
+	width:250px;
+	height:300px;
+}
+.top{
+	width:100%;
+	height:70%;
+}
+.middle{
+	width:100%;
+	height:70%;
+}
+.middle h3{
+	text-align: center;
+}
+.middle p{
+	text-align: center;
+}
+.top img{
+	width:100%;
+	height:100%;
+}
+#autor{
+	width:100%;
+	height:800px;
+  }
+  #ja{
+	position:relative;
+	margin: 0px auto;
+	top:115px;
+	background-color: black;
+	width:70%;
+	height:70%;
+	border-radius: 5%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+  }
+  #mojaslika{
+	width:30%;
+	height:80%;
+  }
+  #mojaslika img{
+	position: relative;
+	left:30px;
+	width:80%;
+	height:100%;
+  }
+  #mojtekst{
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	width:60%;
+	height:80%;
+  }
+  #mojtekst h1{
+	color:white;
+	text-align: center;
+	font-family: Teko;
+  }
+  #mojtekst p{
+	color:white;
+	text-align: center;
+	font-family: Teko;
+	font-size: 33px;
+	position: relative;
+	top:60px;
+  }
+  #forma{
+	margin:0px auto;
+	position: relative;
+	top:120px;
+	width:80%;
+	height:600px;
+	background-color: rgb(13, 13, 13);
+	border-radius: 4%;
+  }
+  #forma h1{
+	text-transform: uppercase;
+	width:100%;
+	text-align: center;
+	top:30px;
+	color:rgb(174, 119, 7);
+	font-family: Georama;
+	font-size: 40px;
+  }
+#kontakt{
+	margin: 0px auto;
+	width:80%;
+	height:80%
+}
+label{
+	color: white;
+}
+input{
+	width:40%;
+	padding: 5px;
+}
+.oznake{
+	margin-top:20px;
+}
+textarea {
+	resize: none;
+ }
+ #google{
+	position:absolute;
+	bottom:100px;
+	left:700px;
+ }
+ input[type=submit]{
+	margin-top:5px;
+	width:10%;
+ }
