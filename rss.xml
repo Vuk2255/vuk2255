@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>Kupovina</title>
+			<link>https://vuk2255.github.io/vuk2255/shop.html</link>
+			<description>Specijalni praznični popusti!</description>
+		</item>
+		<item>
+			<title>Galerija</title>
+			<link>https://vuk2255.github.io/vuk2255/gallery.html</link>
+			<description>Nova slika je dodata u galeriju.</description>
+		</item>
+	</channel>
+</rss>

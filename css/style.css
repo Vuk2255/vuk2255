@@ -49,9 +49,8 @@ ul a li::before{
 	width: 0%;
 	bottom: 20px;
 }
-ul a li:hover::before {
-	width: 8%;
-	cursor:not-allowed;
+#navigation ul a li:hover::before {
+	width:115px;
   }
 .button{
 	border: none;
@@ -81,6 +80,7 @@ ul a li:hover::before {
 	background-image: url(../assets/img/background.jpg);
 	background-position: center;
 	background-attachment: fixed;
+	background-attachment: fixed;
 	height:100%;
   }
   #background2{
@@ -108,6 +108,16 @@ ul a li:hover::before {
 	background-blend-mode: multiply;
 	height:100%;
   }
+  #background5{
+	background-image: url(../assets/img/testemonial.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: rgb(38, 35, 35);
+	background-blend-mode: multiply;
+	height:100%;
+	width:100%;
+  }
 .title{ 
 	position: relative;
 	top:100px;
@@ -116,6 +126,9 @@ ul a li:hover::before {
 	font-family: Georama;
 	font-size: 60px;
 	text-shadow: 1px 1px #000000;
+	animation-name: tracking-in-expand;
+	animation-duration: 1s;
+	transition: transform 0.5s;
   }
   .title2{ 
 	text-align: center;
@@ -195,7 +208,7 @@ figcaption{
 	margin:0px auto;
 	background-color: rgb(123, 100, 46);
 	width:100%;
-	height:550px;
+	height:490px;
 }
 #why h1{
 	position: relative;
@@ -546,7 +559,7 @@ footer{
 #autor{
 	width:100%;
 	height:800px;
-  }
+}
   #ja{
 	position:relative;
 	margin: 0px auto;
@@ -554,32 +567,35 @@ footer{
 	background-color: black;
 	width:70%;
 	height:70%;
-	border-radius: 5%;
+	border-radius: 40px 20px 40px 20px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-  }
+	animation-name: slide-in-bck-center;
+	animation-duration: 1s;
+	transition: transform 0.5s, box-shadow 0.2s;
+}
   #mojaslika{
 	width:30%;
 	height:80%;
-  }
+}
   #mojaslika img{
 	position: relative;
 	left:30px;
 	width:80%;
 	height:100%;
-  }
+}
   #mojtekst{
 	border-top: 2px solid white;
 	border-bottom: 2px solid white;
 	width:60%;
 	height:80%;
-  }
+}
   #mojtekst h1{
 	color:white;
 	text-align: center;
 	font-family: Teko;
-  }
+}
   #mojtekst p{
 	color:white;
 	text-align: center;
@@ -587,7 +603,7 @@ footer{
 	font-size: 33px;
 	position: relative;
 	top:60px;
-  }
+}
   #forma{
 	margin:0px auto;
 	position: relative;
@@ -596,7 +612,7 @@ footer{
 	height:600px;
 	background-color: rgb(13, 13, 13);
 	border-radius: 4%;
-  }
+}
   #forma h1{
 	text-transform: uppercase;
 	width:100%;
@@ -605,7 +621,7 @@ footer{
 	color:rgb(174, 119, 7);
 	font-family: Georama;
 	font-size: 40px;
-  }
+}
 #kontakt{
 	margin: 0px auto;
 	width:80%;
@@ -633,3 +649,117 @@ textarea {
 	margin-top:5px;
 	width:10%;
  }
+ #galerija{
+	height:800px;
+	width:100%;
+}
+#slikice{
+	height:100%;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	flex-wrap: wrap;
+}
+.slikica{
+	width:30%;
+	height:40%;
+	position: relative;
+	top:50px;
+}
+.slikica img{
+	width:100%;
+	height:100%;
+}
+#gallery-wrap{
+	position: relative;
+	top:30px;
+	display:flex;
+	justify-content: space-around;
+}
+.slikica img{
+	margin: 5px;
+	border-radius: 40px 20px 40px 20px;
+  	transition: transform 0.5s, box-shadow 0.2s;
+}
+.slikica img:hover{
+	transform: scale(1.02);
+	box-shadow: 10px 5px 5px rgb(174, 119, 7);
+}
+#ja:hover{
+	transform: scale(1.02);
+	box-shadow: 10px 5px 5px rgb(174, 119, 7);
+}
+#shoprakija{
+	width:100%;
+	height:1100px;
+}
+#shoprakija h1{
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-family: Georama;
+	position: relative;
+	top:60px;
+	color:rgb(186, 125, 4);
+	animation-name: tracking-in-expand;
+	animation-duration: 1s;
+	transition: transform 0.5s;
+}
+#gallery-rakija1{
+	position: relative;
+	top:30px;
+	display:flex;
+	justify-content: space-around;
+}
+#gallery-rakija2{
+	position: relative;
+	top:90px;
+	display:flex;
+	justify-content: space-around;
+}
+.button5{
+	border: none;
+	color: rgb(174, 119, 7);
+	padding: 16px 35px;
+	width:210px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color:transparent; 
+	color: rgb(174, 119, 7);
+	border: 2px solid rgb(174, 119, 7);
+	position: relative;
+	top:200px;
+  }
+  .button5:hover {
+	background-color: rgb(174, 119, 7);
+	color: white;
+  }
+ @keyframes slide-in-bck-center {
+	0% {
+	  transform: translateZ(600px);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateZ(0);
+	  opacity: 1;
+	}
+}
+ @keyframes tracking-in-expand {
+	0% {
+	  letter-spacing: -0.5em;
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
