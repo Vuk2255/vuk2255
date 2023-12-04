@@ -260,6 +260,7 @@ figcaption{
 	text-transform: uppercase;
 }
 #visited{
+	width:35%;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -270,6 +271,8 @@ figcaption{
 	height:100%;
 }
 #visited p{
+	position: absolute;
+	left:500px;
 	margin-bottom: 20px;
 	margin-left:100px;
 	width:80%;
@@ -292,7 +295,7 @@ figcaption{
 	border: 2px solid rgb(174, 119, 7);
 	position: relative;
 	top:80px;
-	right:445px;
+	right:-65px;
   }
   .button2:hover {
 	background-color: rgb(174, 119, 7);

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rss version="2.0">
 	<channel>
+		<title>Obaveštenja i popusti</title>
+		<link>https://vuk2255.github.io/vuk2255/index.html</link>
+		<description>Najbolja domaća rakija!</description>
 		<item>
 			<title>Kupovina</title>
 			<link>https://vuk2255.github.io/vuk2255/shop.html</link>
